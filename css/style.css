@@ -1,0 +1,36 @@
+*{
+	transition: all 1s;
+}
+
+body
+{
+	font-family: 'Montserrat', sans-serif;
+	background-color: #eff3f6;
+}
+
+.ball
+{
+	width: 100px;
+	height: 100px;
+	position: relative;
+	background-color: #C600BA;
+	border-radius: 50%;
+}
+
+.slide-container
+{
+	position: relative;
+}
+
+.RightBtn
+{
+	position: absolute;
+	top: 45%;
+	right: 0;
+}
+.LeftBtn
+{
+	position: absolute;
+	top: 45%;
+	left: 0;
+}

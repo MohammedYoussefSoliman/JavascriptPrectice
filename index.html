@@ -1,0 +1,76 @@
+<head>
+		<title>Weily JS Practice</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+
+<!-- 
+<h1>Click the button to Move the ball <button class="btn btn-success p-2" onclick="moveBall()">Move</button></h1>
+
+<div class="ball" id="ball">
+	
+</div> -->
+
+<div class="container py-3">
+	<!-- Starting the slider -->
+	<div class="row slide-container">
+	<div class="col-lg-12 w-100">
+		<img src="img/1.jpg" class="slides img-fluid w-100">
+		<img src="img/2.jpg" class="slides img-fluid w-100">
+		<img src="img/3.jpg" class="slides img-fluid w-100">
+		<img src="img/4.jpg" class="slides img-fluid w-100">
+	</div>
+	<button onclick="show (1)" class="btn btn-lg py-4 RightBtn"><i class="fas fa-arrow-circle-right fa-fw fa-lg"></i></button>
+	<button onclick="show (-1)" class="btn btn-lg py-4 LeftBtn"><i class="fas fa-arrow-circle-left fa-fw fa-lg"></i></button>
+	</div>
+
+
+
+	<!-- Starting the application -->
+	<h2 class="mt-5">
+		PhoneBook <button class="btn btn-danger" id="btnToggle" onclick="collapse()">Hide <i class="fas fa-arrow-circle-up"></i></button>
+	</h2>
+	<div id="form-cont">
+	<label class="my-3">User Name :</label>
+	<input type="text" name="PhoneBook" id="uname" class="form-control ">
+	<label class="my-3">User phone :</label>
+	<input type="number" name="PhoneBook" id="uphone" class="form-control ">
+	<label class="my-3">Age :</label>
+	<input type="text" name="PhoneBook" id="uage" class="form-control ">
+	<label class="my-3">User email :</label>
+	<input type="email" name="PhoneBook" id="uemail" class="form-control ">
+	<button onclick="Addrecord()" class="btn btn-info my-4 float-right">Add</button>
+	</div>
+
+	<table class="table table-striped">
+		<thead>
+			<td>User Name</td>
+			<td>User phone</td>
+			<td>title</td>
+			<td>User email</td>
+		</thead>
+		<tbody id="tab">
+		</tbody>
+	</table>
+<button onclick="clearLocal()" class="btn btn-warning my-4 float-right">Clear Table</button>
+	</div>
+
+</div>
+
+
+
+
+
+
+
+
+	
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
